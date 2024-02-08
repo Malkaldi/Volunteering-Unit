@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Added padding to prevent form from touching edges on small screens */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+    display: block; /* Ensure label is on its own line */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensure input is on its own line */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block; /* Ensure button is on its own line */
+    margin-top: 1em; /* Space between button and previous element */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    color: green;
+    min-height: 4em;
+    text-align: center;
+    max-height: 10em;
+    margin-top: 2em; /* Space between message and container */
+    width: 100%;
+    max-width: 400px; /* Match the width of the container */
+    white-space: pre-line;
+}
