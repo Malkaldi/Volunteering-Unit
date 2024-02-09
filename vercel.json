@@ -16,7 +16,7 @@
       "destination": "/"
     },
     {
-      "source": "/public/(.+)",
+      "source": "/public/(.*)",
       "destination": "/"
     }
   ]
