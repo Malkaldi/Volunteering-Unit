@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, rgba(47, 150, 163, 0.7), rgba(48, 62, 143, 0.7)), url('./images/background-placeholder.jpg'); /* Gradient overlay on top of your background image */
+    background-size: cover; /* Ensure background covers the entire page */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Align the header to the left */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    text-align: left; /* Left align the text */
+    padding: 10px 20px; /* Added left and right padding */
+    font-size: 24px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.header img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 15px; /* Space between logo and title */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Soften the background behind the container */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    color: green;
+    min-height: 4em;
+    text-align: center;
+    max-height: 10em;
+    margin-top: 2em;
+    width: 100%;
+    max-width: 400px;
+    white-space: pre-line;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build # Replace this with your build command
+  artifacts:
+    baseDirectory: /dist # Replace 'dist' with your build output directory
+    files:
+      - '**/*'
