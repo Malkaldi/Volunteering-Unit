@@ -2,14 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "./app.js",
+      "src": "./index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/app.js"
+      "source": "/(.*)",
+      "destination": "/"
+    },
+    {
+      "source": "/public/css/(.*)",
+      "destination": "/css"
+    },
+    {
+      "source": "/public/images/(.*)",
+      "destination": "/images"
+    },
+    {
+      "source": "/public/js/(.*)",
+      "destination": "/js"
     }
   ]
 }
