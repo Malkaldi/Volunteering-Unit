@@ -16,8 +16,16 @@
       "destination": "/"
     },
     {
-      "source": "/public/(.*)",
-      "destination": "/"
+      "source": "/public/css/(.*)",
+      "destination": "/css"
+    },
+    {
+      "source": "/public/images/(.*)",
+      "destination": "/images"
+    },
+    {
+      "source": "/public/js/(.*)",
+      "destination": "/js"
     }
   ]
 }
