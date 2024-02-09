@@ -6,8 +6,8 @@ frontend:
         - npm install
     build:
       commands:
-        - npm run build # Replace this with your build command
+        - echo "No build step required"
   artifacts:
-    baseDirectory: /dist # Replace 'dist' with your build output directory
+    baseDirectory: /public # Update this to the directory where your static files are located
     files:
       - '**/*'
