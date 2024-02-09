@@ -14,12 +14,10 @@
     {
       "source": "/(.*)",
       "destination": "/"
-    }
-  ],
-  "routes": [
+    },
     {
-      "src": "/(.+)",
-      "dest": "public/$1"
+      "source": "public/(.+)",
+      "destination": "/"
     }
   ]
 }
