@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+app.use(cors({
+    origin: process.env.SERVER
+}));
 const path = require('path');
 
 require('dotenv').config();
