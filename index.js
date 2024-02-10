@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 
 
 // Route to serve the attendance page
-app.get('/attendance', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'attendance.html'));
 });
 

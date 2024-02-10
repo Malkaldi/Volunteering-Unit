@@ -5,8 +5,9 @@ const studentSchema = new mongoose.Schema({
     name: String,
     mobile: Number,
     shirt: String,
-    skills: String,
     program: String,
+    lead: String,
+    leadNo: Number,
     presence: { type: Boolean, default: false }
 });
 
