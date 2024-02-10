@@ -23,12 +23,12 @@ router.post("/mark-attendance", async (req, res) => {
         res.status(200).json({
           //  Green
           type: "success",
-          message: "Your attendance has been taken successfully \n${student.name} \n${student.program}",
+          message: `Your attendance has been taken successfully \n${student.name} \n${student.program}`,
         });
       } else {
         res.status(200).json({
           type: "success",
-          message: "Your attendance was already taken \n${student.name} \n${student.program}",
+          message: `Your attendance was already taken \n${student.name} \n${student.program}`,
         });
       }
     } else {
