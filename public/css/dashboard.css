@@ -1,3 +1,5 @@
+/* dashboard.css */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -10,8 +12,10 @@ body {
 
 .container {
     width: 80%;
-    align-items: center;
     max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the charts within the container */
 }
 
 .page-title {
@@ -20,5 +24,10 @@ body {
 }
 
 .chart-container {
+    width: 80vw; /* Adjust based on your preference */
+    height: 40vh; /* Adjust based on your preference */
     margin-bottom: 2rem;
+    display: flex; /* Flex to help with centering */
+    justify-content: center; /* Center the canvas horizontally */
+    align-items: center; /* Center the canvas vertically */
 }
